@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h4>可以对下面的内容进行编辑</h4>
+		<article contenteditable="true" id="article1">可以编辑的部分</article>
+		<input type="button" value="保存" onclick="save()" />
+		<h4>结果</h4>
+		<article id="article2"></article>
+		<script>
+			function save(){
+				var str = document.getElementById("article1").innerHTML;
+				document.getElementById("article2").innerHTML = str;
+			}
+		</script>
+	</body>
+</html>

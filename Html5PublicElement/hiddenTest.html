@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<h3>是否显示详细信息</h3>
+		<input type="radio" onclick="test(1)" value="1" checked="checked" name="isShow" />显示
+		<input type="radio" onclick="test(0)" value="0" name="isShow" />隐藏
+		<p>
+			<article id="art">
+				蓝蓝的天空飘着朵朵白云！
+			</article>
+		</p>
+		<script>
+			function test(obj) {
+				var isShow = (obj) ? false : true;
+				var str = document.getElementById("art").hidden = isShow;
+			}
+		</script>
+	</body>
+
+</html>
