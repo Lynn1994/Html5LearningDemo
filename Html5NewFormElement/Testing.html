@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<!--
+        	作者：Lyn_2016@outlook.com
+        	时间：2016-04-10
+        	描述：Testing new form element.
+        -->
+		<!--
+        	Testing input elements.
+        -->
+		<p>
+			<label>Email:</label>
+			<input type="email" name="html5EmailTest" /><br />
+			<label>URL:</label>
+			<input type="url" name="html5URLTest" /><br />
+			<label>Number:</label>
+			<input type="number" name="html5NumberTest" min="1" max="10" step="1" value="1" /><br />
+			<label>Range:</label>
+			<input type="range" name="html5RangeTest" min="-100" max="100" value="0" step="10" /><br />
+			<label>Time:</label>
+			<input type="time" name="html5TimeTest" step="900" /><br />
+			<label>Date:</label>
+			<input type="date" name="html5DateTest" /><br />
+			<label>Month:</label>
+			<input type="month" name="html5MonthTest" /><br />
+			<label>Week:</label>
+			<input type="week" name="html5WeekTest" /><br />
+			<label>DateTime:</label>
+			<input type="datetime" name="html5DatetimeTest" />
+		</p>
+		<!--
+        	Testing form elements.
+        -->
+		<label>邮箱：
+        	<input type="email" form="userForm" name="email" placeholder="name@domain.com"/>
+        </label>
+        <form id="userForm">
+        	<fieldset>
+        		<legend>表单新增属性</legend>
+        		<p>
+        			<label>自动获取焦点：</label>
+        			<input type="text" name="htmlAutofocusTest" autofocus="autofocus" />
+        			<small>Autofocus!</small>
+        		</p>
+        		<p>
+        			<label>占位符：</label>
+        			<input type="text" name="html5PlaceholderTest" placeholder="name@domain.com" />
+        			<small>Placeholder!</small>
+        		</p>
+        		<p>
+        			<label>必选项：</label>
+        			<input type="text" name="html5RequiredTest" required="required" />
+        			<small>Required!</small>
+        		</p>
+        	</fieldset>
+        	<div>
+        		<button>Submit</button>
+        	</div>
+        </form>
+	</body>
+
+</html>
